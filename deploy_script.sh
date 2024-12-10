@@ -3,7 +3,7 @@
 
 # Variables
 REPO_URL="https://github.com/SreelekhaB77/geo_tracker.git" # Replace with your GitHub repo URL
-APP_DIR="/home/ubuntu/project/sample_project"
+APP_DIR="/home/ubuntu/project/geo_tracker"
 RUBY_VERSION="3.2.3"
 
 # Clone the repository
