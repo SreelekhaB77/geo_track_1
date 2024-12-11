@@ -34,3 +34,4 @@ jobs:
           pkill -f 'ruby.*app.rb' || true  # Stop any running Ruby process for app.rb
           ruby app.rb -o 0.0.0.0 -p 4567  # Start the Sinatra application
         EOF
+
