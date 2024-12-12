@@ -34,6 +34,6 @@ jobs:
           pkill -f 'ruby.*app.rb' || true  # Stop any running Ruby process for app.rb
           ruby app.rb -o 0.0.0.0 -p 4567 & # Start the Sinatra application
           # Wait for the Sinatra app to be ready, by checking the public IP
-    curl --retry 10 --retry-delay 5 --max-time 60 http://54.160.215.88:4567
-     EOF
+          curl --retry 10 --retry-delay 5 --max-time 60 http://54.160.215.88:4567
+         EOF
 
