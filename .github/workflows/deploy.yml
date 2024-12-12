@@ -30,6 +30,7 @@ jobs:
       run: |
         ssh -i ~/.ssh/id_ed25519 $SERVER_USER@$SERVER_IP << 'EOF'
           cd /home/ubuntu/project/geo_tracker
-          git pull origin main  # Pull the latest code from the main branch
-          puma -d -e production -b tcp://0.0.0.0:4567 app.rb  # Restart Puma (or your web server)
+          git pull --rebase origin main  # Pull the latest code using rebase
+          pkill -f 'ruby.*app.rb' || true  # Stop any running Ruby process for app.rb
+          ruby -run -e httpd app.rb -o 0.0.0.0 -p 4567  # Start the Ruby application
         EOF
