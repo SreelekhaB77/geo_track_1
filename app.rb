@@ -2,7 +2,7 @@
 require 'sinatra'
 require 'geocoder'
 require 'json'
-require 'openssl
+require 'openssl'
 
 # Basic Sinatra configuration
 set :port, 4567
