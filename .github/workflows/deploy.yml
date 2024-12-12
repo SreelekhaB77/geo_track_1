@@ -13,25 +13,23 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
+    - name: Set up SSH private key for accessing the server
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+
+    - name: Add Server to Known Hosts
+      run: |
+        ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
     - name: Deploy to Server
       env:
-        SERVER_IP: "54.160.215.88"
-        SERVER_USER: "ubuntu"
-        SSH_PRIVATE_KEY: "-----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACDj4l9mYyxRouZzz/aQGjomvnSCBxtdOkrxLys9cQuQVAAAAKBWjHhFVox4
-RQAAAAtzc2gtZWQyNTUxOQAAACDj4l9mYyxRouZzz/aQGjomvnSCBxtdOkrxLys9cQuQVA
-AAAEDOuD1eBNjBiNwbxzxUq5OA0NtuOO4SVndmQMa7mUIgb+PiX2ZjLFGi5nPP9pAaOia+
-dIIHG106SvEvKz1xC5BUAAAAFnVidW50dUBpcC0xNzItMzEtMjAtMjIBAgMEBQYH
------END OPENSSH PRIVATE KEY-----"
+        SERVER_IP: ${{ secrets.SERVER_IP }}
+        SERVER_USER: ${{ secrets.SERVER_USER }}
       run: |
-        # Set up SSH private key for accessing the server
-        echo "$SSH_PRIVATE_KEY" > private_key.pem
-        chmod 600 private_key.pem
-
-        # SSH into the server and deploy
-        ssh -i private_key.pem $SERVER_USER@$SERVER_IP << 'EOF'
+        ssh -i ~/.ssh/id_ed25519 $SERVER_USER@$SERVER_IP << 'EOF'
           cd /home/ubuntu/project/geo_tracker
           git pull origin main  # Pull the latest code from the main branch
-          puma -d -e production -b tcp://0.0.0.0:4567 app.rb# Restart Puma (or your web server)
+          puma -d -e production -b tcp://0.0.0.0:4567 app.rb  # Restart Puma (or your web server)
         EOF
