@@ -33,8 +33,9 @@ jobs:
           cd /home/ubuntu/project/geo_tracker
           git pull origin main
           pkill -f 'ruby.*app.rb' || true
-          ruby app.rb -o 0.0.0.0 -p 4567 &
+          nohup ruby app.rb -o 0.0.0.0 -p 4567 > sinatra.log 2>&1 &
           sleep 5  # Allow the server some time to start
+          
         EOF
 
     - name: Verify App Deployment
