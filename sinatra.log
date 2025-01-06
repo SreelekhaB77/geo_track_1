@@ -1,0 +1,19 @@
+[2025-01-06 07:04:28] INFO  WEBrick 1.8.1
+[2025-01-06 07:04:28] INFO  ruby 3.2.3 (2024-01-18) [x86_64-linux-gnu]
+== Sinatra (v4.1.1) has taken the stage on 4567 for development with backup from WEBrick
+[2025-01-06 07:04:28] INFO  WEBrick::HTTPServer#start: pid=13528 port=4567
+74.249.14.214 - - [06/Jan/2025:07:04:33 +0000] "GET /user_location HTTP/1.1" 200 106 0.0406
+74.249.14.214 - - [06/Jan/2025:07:04:33 UTC] "GET /user_location HTTP/1.1" 200 106
+- -> /user_location
+106.51.76.24 - - [06/Jan/2025:07:07:58 +0000] "GET /user_location HTTP/1.1" 200 107 0.0365
+106.51.76.24 - - [06/Jan/2025:07:07:58 UTC] "GET /user_location HTTP/1.1" 200 107
+- -> /user_location
+106.51.76.24 - - [06/Jan/2025:07:07:58 +0000] "GET /favicon.ico HTTP/1.1" 404 441 0.0005
+106.51.76.24 - - [06/Jan/2025:07:07:58 UTC] "GET /favicon.ico HTTP/1.1" 404 441
+http://18.234.56.63:4567/user_location -> /favicon.ico
+106.51.76.24 - - [06/Jan/2025:07:26:46 +0000] "GET /user_location HTTP/1.1" 200 107 0.0400
+106.51.76.24 - - [06/Jan/2025:07:26:45 UTC] "GET /user_location HTTP/1.1" 200 107
+- -> /user_location
+20.75.95.168 - - [06/Jan/2025:07:26:49 +0000] "GET /user_location HTTP/1.1" 200 105 0.0456
+20.75.95.168 - - [06/Jan/2025:07:26:48 UTC] "GET /user_location HTTP/1.1" 200 105
+- -> /user_location
