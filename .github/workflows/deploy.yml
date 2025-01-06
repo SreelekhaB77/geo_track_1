@@ -30,12 +30,21 @@ jobs:
       run: |
         ssh -i ~/.ssh/id_ed25519 $SERVER_USER@$SERVER_IP <<EOF
           set -e  # Exit immediately if a command fails
-          cd /home/ubuntu/project/geo_tracker
-          git pull origin main
-          pkill -f 'ruby.*app.rb' || true
-          nohup ruby app.rb -o 0.0.0.0 -p 4567 > sinatra.log 2>&1 &
-          sleep 5  # Allow the server some time to start
           
+          # Navigate to the project directory
+          cd /home/ubuntu/project/geo_tracker
+          
+          # Pull the latest changes from the repository
+          git pull origin main
+          
+          # Stop any running Puma server process
+          pkill -f 'puma' || true
+          
+          # Start the app using the Puma server in the background
+          nohup puma -b tcp://0.0.0.0:4567 -d > puma.log 2>&1 &
+          
+          # Wait a few seconds for the server to start
+          sleep 5
         EOF
 
     - name: Verify App Deployment
