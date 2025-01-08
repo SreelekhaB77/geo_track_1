@@ -32,7 +32,7 @@ jobs:
           set -e  # Exit immediately if a command fails
           
           # Navigate to the project directory
-          cd /home/ubuntu/project/geo_tracker
+          cd /home/ubuntu/geo_tracker
           
           # Pull the latest changes from the repository
           git pull origin main
