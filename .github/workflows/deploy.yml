@@ -30,18 +30,25 @@ jobs:
       run: |
         ssh -i ~/.ssh/id_ed25519 $SERVER_USER@$SERVER_IP <<EOF
           set -e  # Exit immediately if a command fails
-          
+
           # Navigate to the project directory
-          cd /home/ubuntu/project/geo_tracker
+          cd /home/ubuntu/geo_tracker
           
           # Pull the latest changes from the repository
           git pull origin main
           
           # Stop any running Puma server process
           pkill -f 'puma' || true
+
+          # Ensure required Ruby gems are installed
+          bundle install
+
+          # Clean and recreate the Puma socket directory
+          mkdir -p tmp/puma
+          rm -f tmp/puma/socket_3
           
-          # Start the app using the Puma server in the background
-          nohup puma -b tcp://0.0.0.0:4567 -d > puma.log 2>&1 &
+          # Start the Puma server with proper options
+          nohup puma -b tcp://0.0.0.0:4567 -e production > puma.log 2>&1 &
           
           # Wait a few seconds for the server to start
           sleep 5
