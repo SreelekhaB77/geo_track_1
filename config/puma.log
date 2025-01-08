@@ -1,0 +1,13 @@
+nohup: ignoring input
+/home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/dsl.rb:135:in `read': No such file or directory @ rb_sysopen - config/puma.rb (Errno::ENOENT)
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/dsl.rb:135:in `_load_from'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/configuration.rb:246:in `block in load'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/configuration.rb:246:in `each'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/configuration.rb:246:in `load'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/launcher.rb:56:in `initialize'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/cli.rb:66:in `new'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/lib/puma/cli.rb:66:in `initialize'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/bin/puma:8:in `new'
+	from /home/ubuntu/.rbenv/versions/3.2.3/lib/ruby/gems/3.2.0/gems/puma-6.5.0/bin/puma:8:in `<top (required)>'
+	from /home/ubuntu/.rbenv/versions/3.2.3/bin/puma:25:in `load'
+	from /home/ubuntu/.rbenv/versions/3.2.3/bin/puma:25:in `<main>'

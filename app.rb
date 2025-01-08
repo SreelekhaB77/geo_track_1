@@ -12,7 +12,7 @@ get '/user_location' do
   user_ip = request.ip
 
   # Fallback IP for local testing (use a real IP when deployed)
-   user_ip = '8.8.8.8' if user_ip == '18.234.56.63'
+   user_ip = '8.8.8.8' if user_ip == '34.238.171.87'
 
   # Use Geocoder to get location data
   location_data = Geocoder.search(user_ip).first

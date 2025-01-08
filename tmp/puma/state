@@ -1,0 +1,5 @@
+---
+pid: 532537
+control_url: unix:///tmp/puma-status-1736337501096-532537
+control_auth_token: 3f9efdda98bdb6bb9505b6008c98333d
+running_from: "/home/ubuntu/geo_tracker"

@@ -1,10 +1,13 @@
-/usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/lib/puma/cli.rb:45:in `initialize': ambiguous option: -d (OptionParser::AmbiguousOption)
-	from /usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/bin/puma:8:in `new'
-	from /usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/bin/puma:8:in `<top (required)>'
-	from /usr/bin/puma:25:in `load'
-	from /usr/bin/puma:25:in `<main>'
-/usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/lib/puma/cli.rb:45:in `initialize': invalid option: d (OptionParser::InvalidOption)
-	from /usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/bin/puma:8:in `new'
-	from /usr/lib/x86_64-linux-gnu/rubygems-integration/3.2.0/gems/puma-6.4.2/bin/puma:8:in `<top (required)>'
-	from /usr/bin/puma:25:in `load'
-	from /usr/bin/puma:25:in `<main>'
+nohup: ignoring input
+"/home/ubuntu/geo_tracker"
+[532537] Puma starting in cluster mode...
+[532537] * Puma version: 6.5.0 ("Sky's Version")
+[532537] * Ruby version: ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux]
+[532537] *  Min threads: 4
+[532537] *  Max threads: 8
+[532537] *  Environment: development
+[532537] *   Master PID: 532537
+[532537] *      Workers: 2
+[532537] *     Restarts: (✔) hot (✔) phased
+[532537] * Listening on unix:///home/ubuntu/geo_tracker/tmp/puma/socket_3
+[532537] Use Ctrl-C to stop
