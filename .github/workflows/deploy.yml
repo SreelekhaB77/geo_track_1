@@ -32,7 +32,7 @@ jobs:
           set -e  # Exit immediately if a command fails
           
           # Navigate to the project directory
-          cd /home/ubuntu/geo_tracker
+          cd /home/ubuntu/project/geo_tracker
           
           # Pull the latest changes from the repository
           git pull origin main
@@ -41,7 +41,7 @@ jobs:
           pkill -f 'puma' || true
           
           # Start the app using the Puma server in the background
-          nohup puma -b tcp://0.0.0.0:8080 -d > puma.log 2>&1 &
+          nohup puma -b tcp://0.0.0.0:4567 -d > puma.log 2>&1 &
           
           # Wait a few seconds for the server to start
           sleep 5
@@ -49,4 +49,4 @@ jobs:
 
     - name: Verify App Deployment
       run: |
-        curl --retry 5 --retry-delay 5 --max-time 11 http://${{ secrets.SERVER_IP }}:8080/user_location
+        curl --retry 5 --retry-delay 5 --max-time 11 http://${{ secrets.SERVER_IP }}:4567/user_location
