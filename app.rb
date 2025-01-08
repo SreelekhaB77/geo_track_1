@@ -4,7 +4,7 @@ require 'json'
 require 'openssl'
 
 # Basic Sinatra configuration
-set :port, 4567
+set :port, 8080
 
 # Endpoint to get user location
 get '/user_location' do
