@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-require './app.rb' # Adjust to match your app file
-=======
-require './app' # Adjust to match your app file
->>>>>>> Stashed changes
+require './app'
 run Sinatra::Application
+

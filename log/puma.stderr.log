@@ -1,0 +1,18 @@
+=== puma startup: 2025-01-09 07:19:15 +0000 ===
+=== puma startup: 2025-01-09 09:19:30 +0000 ===
+=== puma startup: 2025-01-09 10:12:56 +0000 ===
+=== puma startup: 2025-01-09 10:15:55 +0000 ===
+106.51.76.24 - - [09/Jan/2025:10:16:08 +0000] "GET /user_location HTTP/1.1" 200 107 0.0404
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+=== puma startup: 2025-01-09 10:38:40 +0000 ===
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+=== puma startup: 2025-01-09 10:39:08 +0000 ===
+106.51.76.24 - - [09/Jan/2025:10:39:13 +0000] "GET /user_location HTTP/1.1" 200 107 0.0409
+106.51.76.24 - - [09/Jan/2025:11:02:37 +0000] "GET /user_location HTTP/1.1" 200 107 0.0436
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
