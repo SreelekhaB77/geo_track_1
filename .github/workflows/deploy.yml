@@ -37,18 +37,14 @@ jobs:
           # Pull the latest changes from the repository
           git pull origin main
           
-          # Stop any running Puma server process
-          pkill -f 'puma' || true
+          # Stop any running app process
+          pkill -f 'ruby' || true
 
           # Ensure required Ruby gems are installed
           bundle install
 
-          # Clean and recreate the Puma socket directory
-          mkdir -p tmp/puma
-          rm -f tmp/puma/socket_3
-          
-          # Start the Puma server with proper options
-          nohup puma -b tcp://0.0.0.0:4567 -e production > puma.log 2>&1 &
+          # Start the app using the ruby command
+          nohup ruby app.rb -o 0.0.0.0 -p 4567 > ruby_app.log 2>&1 &
           
           # Wait a few seconds for the server to start
           sleep 5
