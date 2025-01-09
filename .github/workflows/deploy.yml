@@ -33,23 +33,20 @@ jobs:
 
           # Navigate to the project directory
           cd /home/ubuntu/geo_tracker
-          
+
           # Pull the latest changes from the repository
           git pull origin main
-          
-          # Stop any running app process
-          pkill -f 'ruby' || true
 
           # Ensure required Ruby gems are installed
           bundle install
 
-          # Start the app using the ruby command
-          nohup ruby app.rb -o 0.0.0.0 -p 4567 > ruby_app.log 2>&1 &
-          
-          # Wait a few seconds for the server to start
+          # Restart the systemd service
+          sudo service geo_tracker restart
+
+          # Wait a few seconds for the service to restart
           sleep 5
         EOF
 
     - name: Verify App Deployment
       run: |
-        curl --retry 5 --retry-delay 5 --max-time 11 http://${{ secrets.SERVER_IP }}:4567/user_location
+        curl --retry 5 --retry-delay 5 --max-time 11 http://${{ secrets.SERVER_IP }}/user_location
