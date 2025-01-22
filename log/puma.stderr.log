@@ -16,3 +16,21 @@
 == Sinatra has ended his set (crowd applauds)
 == Sinatra has ended his set (crowd applauds)
 == Sinatra has ended his set (crowd applauds)
+=== puma startup: 2025-01-22 09:42:58 +0000 ===
+=== puma startup: 2025-01-22 09:43:36 +0000 ===
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+=== puma startup: 2025-01-22 09:45:50 +0000 ===
+=== puma startup: 2025-01-22 09:46:27 +0000 ===
+2025-01-22 09:46:58 +0000 HTTP parse error, malformed request: #<Puma::HttpParserError: Invalid HTTP format, parsing fails. Are you trying to open an SSL connection to a non-SSL Puma?>
+2025-01-22 09:46:58 +0000 HTTP parse error, malformed request: #<Puma::HttpParserError: Invalid HTTP format, parsing fails. Are you trying to open an SSL connection to a non-SSL Puma?>
+106.51.76.24 - - [22/Jan/2025:09:46:59 +0000] "GET / HTTP/1.1" 404 430 0.0036
+106.51.76.24 - - [22/Jan/2025:09:46:59 +0000] "GET /__sinatra__/404.png HTTP/1.1" 200 18893 0.0023
+106.51.76.24 - - [22/Jan/2025:09:46:59 +0000] "GET /favicon.ico HTTP/1.1" 404 441 0.0006
+=== puma startup: 2025-01-22 09:49:16 +0000 ===
+106.51.76.24 - - [22/Jan/2025:09:50:35 +0000] "GET /user_location HTTP/1.1" 200 107 0.0418
+106.51.76.24 - - [22/Jan/2025:09:50:35 +0000] "GET /favicon.ico HTTP/1.1" 404 441 0.0009
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)
+== Sinatra has ended his set (crowd applauds)

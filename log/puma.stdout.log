@@ -46,3 +46,60 @@
 [32907] - Gracefully shutting down workers...
 [32907] === puma shutdown: 2025-01-09 11:03:35 +0000 ===
 [32907] - Goodbye!
+=== puma startup: 2025-01-22 09:30:16 +0000 ===
+=== puma startup: 2025-01-22 09:30:16 +0000 ===
+=== puma startup: 2025-01-22 09:30:17 +0000 ===
+=== puma startup: 2025-01-22 09:30:17 +0000 ===
+=== puma startup: 2025-01-22 09:30:18 +0000 ===
+=== puma startup: 2025-01-22 09:35:26 +0000 ===
+=== puma startup: 2025-01-22 09:35:27 +0000 ===
+=== puma startup: 2025-01-22 09:35:27 +0000 ===
+=== puma startup: 2025-01-22 09:35:28 +0000 ===
+=== puma startup: 2025-01-22 09:35:28 +0000 ===
+=== puma startup: 2025-01-22 09:36:30 +0000 ===
+=== puma startup: 2025-01-22 09:39:58 +0000 ===
+=== puma startup: 2025-01-22 09:39:59 +0000 ===
+=== puma startup: 2025-01-22 09:39:59 +0000 ===
+=== puma startup: 2025-01-22 09:40:00 +0000 ===
+=== puma startup: 2025-01-22 09:40:00 +0000 ===
+=== puma startup: 2025-01-22 09:40:20 +0000 ===
+=== puma startup: 2025-01-22 09:40:21 +0000 ===
+=== puma startup: 2025-01-22 09:40:21 +0000 ===
+=== puma startup: 2025-01-22 09:40:22 +0000 ===
+=== puma startup: 2025-01-22 09:40:22 +0000 ===
+=== puma startup: 2025-01-22 09:40:32 +0000 ===
+=== puma startup: 2025-01-22 09:42:58 +0000 ===
+[23100] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23098] - Worker 0 (PID: 23100) booted in 0.0s, phase: 0
+[23101] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23098] - Worker 1 (PID: 23101) booted in 0.0s, phase: 0
+[23101] ! Detected parent died, dying
+[23100] ! Detected parent died, dying
+=== puma startup: 2025-01-22 09:43:36 +0000 ===
+[23137] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23139] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23135] - Worker 0 (PID: 23137) booted in 0.01s, phase: 0
+[23135] - Worker 1 (PID: 23139) booted in 0.0s, phase: 0
+[23135] === puma shutdown: 2025-01-22 09:45:49 +0000 ===
+[23135] - Goodbye!
+[23135] - Gracefully shutting down workers...
+=== puma startup: 2025-01-22 09:45:50 +0000 ===
+[23185] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23183] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23181] - Worker 1 (PID: 23185) booted in 0.0s, phase: 0
+[23181] - Worker 0 (PID: 23183) booted in 0.0s, phase: 0
+[23185] ! Detected parent died, dying
+[23183] ! Detected parent died, dying
+=== puma startup: 2025-01-22 09:46:27 +0000 ===
+[23216] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23214] - Worker 0 (PID: 23216) booted in 0.0s, phase: 0
+[23217] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23214] - Worker 1 (PID: 23217) booted in 0.01s, phase: 0
+=== puma startup: 2025-01-22 09:49:16 +0000 ===
+[23255] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23257] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[23254] - Worker 1 (PID: 23257) booted in 0.01s, phase: 0
+[23254] - Worker 0 (PID: 23255) booted in 0.01s, phase: 0
+[23254] - Gracefully shutting down workers...
+[23254] === puma shutdown: 2025-01-22 09:51:11 +0000 ===
+[23254] - Goodbye!

@@ -9,5 +9,5 @@ nohup: ignoring input
 [532537] *   Master PID: 532537
 [532537] *      Workers: 2
 [532537] *     Restarts: (✔) hot (✔) phased
-[532537] * Listening on unix:///home/ubuntu/geo_tracker/tmp/puma/socket_3
+[532537] * Listening on unix:///home/ubuntu/geo_track_1/tmp/puma/socket_3
 [532537] Use Ctrl-C to stop
