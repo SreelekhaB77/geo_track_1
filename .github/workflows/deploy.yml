@@ -41,7 +41,7 @@ jobs:
           bundle install
 
           # Restart the systemd service
-          sudo service geo_tracker restart
+          sudo service geo_track_1 restart
 
           # Wait a few seconds for the service to restart
           sleep 5
