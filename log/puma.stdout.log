@@ -186,3 +186,11 @@
 [10543] - Worker 1 (PID: 10558) booted in 0.0s, phase: 0
 [10557] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
 [10543] - Worker 0 (PID: 10557) booted in 0.0s, phase: 0
+[10543] === puma shutdown: 2025-01-23 12:45:26 +0000 ===
+[10543] - Goodbye!
+[10543] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 12:45:27 +0000 ===
+[10680] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10676] - Worker 0 (PID: 10680) booted in 0.0s, phase: 0
+[10684] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10676] - Worker 1 (PID: 10684) booted in 0.0s, phase: 0
