@@ -7,6 +7,7 @@ workers 2
 preload_app!
 
 bind "unix:///home/ubuntu/geo_track_1/tmp/puma/socket"
+bind "tcp://0.0.0.0:9292"
 pidfile "/home/ubuntu/geo_track_1/tmp/puma/pid"
 state_path "/home/ubuntu/geo_track_1/tmp/puma/state"
 stdout_redirect "/home/ubuntu/geo_track_1/log/puma.stdout.log", "/home/ubuntu/geo_track_1/log/puma.stderr.log", true
