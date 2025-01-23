@@ -194,3 +194,61 @@
 [10676] - Worker 0 (PID: 10680) booted in 0.0s, phase: 0
 [10684] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
 [10676] - Worker 1 (PID: 10684) booted in 0.0s, phase: 0
+[10676] === puma shutdown: 2025-01-23 12:49:25 +0000 ===
+[10676] - Goodbye!
+[10676] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 12:49:25 +0000 ===
+[10803] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10800] - Worker 0 (PID: 10803) booted in 0.0s, phase: 0
+[10805] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10800] - Worker 1 (PID: 10805) booted in 0.0s, phase: 0
+[10800] === puma shutdown: 2025-01-23 12:49:47 +0000 ===
+[10800] - Goodbye!
+[10800] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 12:49:47 +0000 ===
+[10907] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10904] - Worker 0 (PID: 10907) booted in 0.01s, phase: 0
+[10910] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[10904] - Worker 1 (PID: 10910) booted in 0.0s, phase: 0
+=== puma startup: 2025-01-23 12:54:51 +0000 ===
+[11100] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11098] - Worker 0 (PID: 11100) booted in 0.0s, phase: 0
+[11102] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11098] - Worker 1 (PID: 11102) booted in 0.0s, phase: 0
+[11098] === puma shutdown: 2025-01-23 12:55:14 +0000 ===
+[11098] - Goodbye!
+[11098] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 13:07:03 +0000 ===
+[11197] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11195] - Worker 0 (PID: 11197) booted in 0.0s, phase: 0
+[11198] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11195] - Worker 1 (PID: 11198) booted in 0.0s, phase: 0
+=== puma startup: 2025-01-23 13:13:24 +0000 ===
+[11250] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11248] - Worker 0 (PID: 11250) booted in 0.0s, phase: 0
+[11251] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11248] - Worker 1 (PID: 11251) booted in 0.0s, phase: 0
+=== puma startup: 2025-01-23 13:13:42 +0000 ===
+[11285] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11282] - Worker 1 (PID: 11285) booted in 0.0s, phase: 0
+[11284] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11282] - Worker 0 (PID: 11284) booted in 0.01s, phase: 0
+[11282] === puma shutdown: 2025-01-23 13:14:46 +0000 ===
+[11282] - Goodbye!
+[11282] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 13:15:42 +0000 ===
+[11403] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11404] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11401] - Worker 0 (PID: 11403) booted in 0.01s, phase: 0
+[11401] - Worker 1 (PID: 11404) booted in 0.0s, phase: 0
+[11401] === puma shutdown: 2025-01-23 13:16:04 +0000 ===
+[11401] - Goodbye!
+[11401] - Gracefully shutting down workers...
+=== puma startup: 2025-01-23 13:16:26 +0000 ===
+[11495] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11492] - Worker 1 (PID: 11495) booted in 0.0s, phase: 0
+[11494] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[11492] - Worker 0 (PID: 11494) booted in 0.0s, phase: 0
+[11492] === puma shutdown: 2025-01-23 13:16:38 +0000 ===
+[11492] - Goodbye!
+[11492] - Gracefully shutting down workers...
