@@ -260,3 +260,11 @@
 [3937] - Gracefully shutting down workers...
 [3937] === puma shutdown: 2025-02-04 06:31:52 +0000 ===
 [3937] - Goodbye!
+=== puma startup: 2025-02-04 06:57:18 +0000 ===
+[4975] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[4973] - Worker 0 (PID: 4975) booted in 0.0s, phase: 0
+[4976] + Gemfile in context: /home/ubuntu/geo_track_1/Gemfile
+[4973] - Worker 1 (PID: 4976) booted in 0.0s, phase: 0
+[4973] === puma shutdown: 2025-02-04 07:02:03 +0000 ===
+[4973] - Goodbye!
+[4973] - Gracefully shutting down workers...

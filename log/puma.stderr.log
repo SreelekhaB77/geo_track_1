@@ -71,3 +71,10 @@
 == Sinatra has ended his set (crowd applauds)
 == Sinatra has ended his set (crowd applauds)
 == Sinatra has ended his set (crowd applauds)
+=== puma startup: 2025-02-04 06:57:18 +0000 ===
+106.51.76.24 - - [04/Feb/2025:06:58:50 +0000] "GET / HTTP/1.1" 404 18 0.0021
+106.51.76.24 - - [04/Feb/2025:06:58:53 +0000] "GET / HTTP/1.1" 404 18 0.0026
+106.51.76.24 - - [04/Feb/2025:06:58:53 +0000] "GET /favicon.ico HTTP/1.1" 404 18 0.0004
+106.51.76.24 - - [04/Feb/2025:07:01:34 +0000] "GET / HTTP/1.1" 404 18 0.0004
+106.51.76.24 - - [04/Feb/2025:07:01:43 +0000] "GET /user_location HTTP/1.1" 200 107 0.0433
+106.51.76.24 - - [04/Feb/2025:07:01:53 +0000] "GET /user_location HTTP/1.1" 200 107 0.0376
