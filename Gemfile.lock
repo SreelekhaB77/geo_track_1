@@ -3,8 +3,6 @@ GEM
   specs:
     base64 (0.2.0)
     rack (3.1.9)
-    rackup (2.2.1)
-      rack (>= 3)
 
 PLATFORMS
   ruby
@@ -12,8 +10,7 @@ PLATFORMS
 
 DEPENDENCIES
   base64
-  rack (>= 3.0)
-  rackup (~> 2.2)
+  rack (>= 2.2)
 
 BUNDLED WITH
    2.6.3

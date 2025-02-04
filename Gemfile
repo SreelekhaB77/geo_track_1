@@ -7,9 +7,12 @@ gem 'base64', require: false
 
 
 
-gem "rackup", "~> 2.2"
+#gem 'rackup', '< 2.0'
+
 #gem "puma", "~> 6.4.2"
-gem 'rack', '>= 3.0'
+gem 'rack', '>= 2.2'
+
+
 
 
 
