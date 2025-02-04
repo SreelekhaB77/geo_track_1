@@ -1,6 +1,6 @@
 source "https://rubygems.org"
-gem "sinatra"
-gem 'geocoder', '~> 1.8.5'
+#gem "sinatra"
+#gem 'geocoder', '~> 1.8.5'
 
 
 gem 'base64', require: false
