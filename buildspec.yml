@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - $(aws ecr get-login-password --region <your-region> | docker login --username AWS --password-stdin <your_account_id>.dkr.ecr.<your-region>.amazonaws.com)
+      - REPOSITORY_URI=<your_account_id>.dkr.ecr.<your-region>.amazonaws.com/ruby-app
+      - IMAGE_TAG=latest
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
+      - echo Pushing the Docker image to ECR...
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo Updating Kubernetes deployment...
+      - aws eks update-kubeconfig --region <your-region> --name <your-cluster-name>
+      - kubectl apply -f k8s/
+artifacts:
+  files:
+    - k8s/deployment.yaml
+    - k8s/service.yaml
