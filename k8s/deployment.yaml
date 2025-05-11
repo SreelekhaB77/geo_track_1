@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ruby-app
-        image: <your_ecr_repo_uri>:latest
+        image: 354918386077.dkr.ecr.us-east-1.amazonaws.com/frontend/geo-track:latest
         ports:
         - containerPort: 80
