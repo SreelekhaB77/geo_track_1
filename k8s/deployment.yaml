@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ruby-app
+  labels:
+    app: ruby-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ruby-app
+  template:
+    metadata:
+      labels:
+        app: ruby-app
+    spec:
+      containers:
+      - name: ruby-app
+        image: <your_ecr_repo_uri>:latest
+        ports:
+        - containerPort: 80
