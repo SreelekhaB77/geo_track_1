@@ -1,4 +1,5 @@
-FROM public.ecr.aws/ruby/ruby:3.2
+FROM public.ecr.aws/docker/library/ruby:3.2
+
 
 
 RUN apt-get update -qq && apt-get install -y nginx
