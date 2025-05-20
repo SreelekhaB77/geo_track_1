@@ -10,6 +10,10 @@ WORKDIR /app
 # Copy app files
 COPY . /app
 
+
+RUN mkdir -p /app/tmp/puma /app/log
+
+
 # Install Ruby dependencies
 RUN if [ -f "Gemfile" ]; then bundle install; fi
 
