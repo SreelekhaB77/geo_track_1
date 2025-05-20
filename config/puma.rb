@@ -1,4 +1,4 @@
-directory '/home/ubuntu/geo_track_1'
+directory '/app'
 rackup "config.ru"
 environment 'production'
 
@@ -6,14 +6,11 @@ threads 4, 8
 workers 2
 preload_app!
 
-bind "unix:///home/ubuntu/geo_track_1/tmp/puma/socket"
+#bind "unix:///app/tmp/puma/socket"
 bind "tcp://0.0.0.0:9292"
-pidfile "/home/ubuntu/geo_track_1/tmp/puma/pid"
-state_path "/home/ubuntu/geo_track_1/tmp/puma/state"
-stdout_redirect "/home/ubuntu/geo_track_1/log/puma.stdout.log", "/home/ubuntu/geo_track_1/log/puma.stderr.log", true
+pidfile "/app/tmp/puma/pid"
+state_path "/app/tmp/puma/state"
+stdout_redirect "/app/log/puma.stdout.log", "/app/log/puma.stderr.log", true
 
-
-# Add this line to set proper permissions:
 permissions_mode = 0o777
- 
 
