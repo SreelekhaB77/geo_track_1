@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ruby-app
-        image: 379196425754.dkr.ecr.us-east-1.amazonaws.com/geotrack:latest
+        image: 379196425754.dkr.ecr.us-east-1.amazonaws.com/geotrack
         imagePullPolicy: Always
         ports:
         - containerPort: 80
